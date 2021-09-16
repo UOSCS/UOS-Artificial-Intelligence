@@ -111,10 +111,10 @@ void generate_weights(int dimension)
 
 double inner_product(int sequence, int dimension)
 {
-    double sum = 0LL;
+    double sum = 0.0;
 
     for(int i = 0; i <= dimension; i++)
-        sum += inputs[sequence][i] * weights[i];
+        sum += (double) inputs[sequence][i] * weights[i];
 
     return sum;
 }
